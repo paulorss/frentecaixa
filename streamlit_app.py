@@ -25,7 +25,7 @@ try:
         except (TypeError, ValueError):
             return "R$ 0,00"
 except locale.Error:
-    st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
+    #st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
     def format_currency(value):
         try:
             return f"R$ {value:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
