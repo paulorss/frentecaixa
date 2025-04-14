@@ -277,7 +277,7 @@ def gerar_pdf(data_fechamento, responsavel, saldo_inicial, total_entradas_regist
 
 
 # --- Interface Streamlit ---
-st.title("Controle Detalhado de Caixa - Dinheiro (com Persistência)")
+st.title("Controle Detalhado de Caixa - Dinheiro")
 
 # --- Inputs Iniciais (usam valores do session_state) ---
 col1, col2 = st.columns(2)
