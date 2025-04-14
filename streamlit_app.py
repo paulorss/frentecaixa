@@ -159,7 +159,7 @@ try:
         except (TypeError, ValueError): return "R$ 0,00"
     print("Locale pt_BR definido com sucesso.")
 except locale.Error:
-    st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
+    #st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
     # Mantém a função de fallback definida no início
     print("Falha ao definir locale pt_BR. Usando fallback.")
 
