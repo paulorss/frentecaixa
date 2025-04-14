@@ -28,7 +28,7 @@ try:
 
 except locale.Error:
     # AVISO: Este warning AINDA PODE APARECER nos logs se o locale não for encontrado
-    st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
+    #st.warning("Locale 'pt_BR.UTF-8' ou 'Portuguese_Brazil.1252' não encontrado. Usando formatação de moeda alternativa.")
     # Fallback (função alternativa se o locale falhar)
     def format_currency(value):
         try:
@@ -70,7 +70,7 @@ def gerar_pdf(data_fechamento, responsavel, saldo_inicial, vendas_dinheiro, supr
         ("Diferença (Sobra/Falta):", diferenca),
     ]
 
-    largura_label = 7 * cm
+    largura_label = 9 * cm
 
     for label, value in items:
         c.drawString(margem_esquerda, y_pos, label)
